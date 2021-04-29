@@ -95,7 +95,7 @@ export default {
         },
         {
           header: "作り方",
-          contents: `azooKeyアプリ内ではスクロール式のカスタムタブを作ることができます。さらに高度なカスタムタブを作るには<a href="https://github.com/ensan-hcl/CustardKit">CustardKit</a>が便利です。`,
+          contents: `azooKeyアプリ内ではフリック式・スクロール式のカスタムタブを作ることができます。さらに高度なカスタムタブを作るには<a href="https://github.com/ensan-hcl/CustardKit">CustardKit</a>が便利です。`,
         },
       ],
       customtabfiles: [
@@ -130,6 +130,14 @@ export default {
           link:
             "https://gist.githubusercontent.com/ensan-hcl/6ec781da47118835f5c9efb0947ed5e2/raw/c6fcb530c1a6cbf2fafa1d8cf36c734c91c59937/flick_greek.json",
           image: require("../../assets/custard_flick_greek.jpg"),
+        },
+        {
+          title: "しっぽり明朝濁点",
+          description:
+            "しっぽり明朝の濁点付き仮名をフリックで入力できるテンキースタイルのカスタムタブです。",
+          link:
+            "https://gist.githubusercontent.com/ensan-hcl/b11974d00df380bfc37c248f10aa2a23/raw/199a33885ba89ba4b48541ee9c2566657a23809f/sippori_dakuten.json",
+          image: require("../../assets/custard_sippori_dakuten.jpg"),
         },
       ],
     };

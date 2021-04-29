@@ -105,7 +105,7 @@ export default {
         {
           header: "カスタムタブ",
           contents:
-            "カスタマイズできるのはキーだけではありません。azooKeyではオリジナルのタブを作成し、日本語入力と一緒に簡単に使うことができます。日本語入力とキーボードの拡張性を両立するazooKeyだけの機能です！",
+            `カスタマイズできるのはキーだけではありません。azooKeyではオリジナルの配列のキーボードを作成し、日本語入力と一緒に簡単に使うことができます。日本語入力とキーボードの拡張性を両立するazooKeyだけの機能です！詳しくは<a href="/CustomTabs">「カスタムタブについて」</a>をご覧ください！`
         },
         {
           header: "候補の拡大表示",
@@ -146,6 +146,10 @@ export default {
                     <p>2. アプリを開くと表示される手順に従ってazooKeyを有効化・お好みの設定に変更</p>
                      <p>3. キーボードを開いたら地球儀マークを長押ししてazooKeyを選択</p>
         `,
+        },
+        {
+          header: "OS",
+          contents: "azooKeyはバージョン14.0以上のiOSに対応しています。最新のOSでの利用を常に推奨します。",
         },
         {
           header: "価格",
@@ -222,6 +226,9 @@ h1 {
   margin: 8px;
   font-weight: bold;
   font-size: 3rem;
+}
+h3 {
+  margin-bottom: -5px;
 }
 .text {
   display: inline-block;
