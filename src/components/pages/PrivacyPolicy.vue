@@ -39,41 +39,41 @@
 </template>
 
 <script>
-import TheFooter from "../TheFooter.vue";
-import ArticleHeader1 from "../ArticleHeader1.vue";
-import PageHeader from "../PageHeader.vue";
-import PageArticle from "../PageArticle.vue";
+import TheFooter from '../TheFooter.vue'
+import ArticleHeader1 from '../ArticleHeader1.vue'
+import PageHeader from '../PageHeader.vue'
+import PageArticle from '../PageArticle.vue'
 
-const description = "プライバシーポリシー";
-const image = "https://azookey.netlify.app/static/og-image.png";
-const title = "プライバシーポリシー | azooKey - 自由自在なキーボードアプリ";
+const description = 'プライバシーポリシー'
+const image = 'https://azookey.netlify.app/static/og-image.png'
+const title = 'プライバシーポリシー | azooKey - 自由自在なキーボードアプリ'
 
 export default {
-  name: "PrivacyPolicy",
+  name: 'PrivacyPolicy',
   metaInfo: {
-    title: "プライバシーポリシー",
+    title: 'プライバシーポリシー',
     meta: [
-      { name: "description", content: description },
-      { name: "twitter:description", content: description },
-      { property: "og:description", content: description },
+      { name: 'description', content: description },
+      { name: 'twitter:description', content: description },
+      { property: 'og:description', content: description },
 
-      { name: "twitter:image", content: image },
-      { property: "og:image", content: image },
+      { name: 'twitter:image', content: image },
+      { property: 'og:image', content: image },
 
-      { name: "twitter:title", content: title },
-      { property: "og:title", content: title },
-    ],
+      { name: 'twitter:title', content: title },
+      { property: 'og:title', content: title }
+    ]
   },
   components: {
     TheFooter,
     ArticleHeader1,
     PageHeader,
-    PageArticle,
+    PageArticle
   },
   mounted: function () {
-    window.scrollTo(0, 0);
-  },
-};
+    window.scrollTo(0, 0)
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

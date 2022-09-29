@@ -6,22 +6,22 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   metaInfo: {
     titleTemplate: `%s | azooKey - 自由自在なキーボードアプリ`,
     meta: [
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:type", content: "product" },
-      { property: "og:url", content: location.href },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { property: 'og:type', content: 'product' },
+      { property: 'og:url', content: location.href },
       {
-        property: "og:site_name",
-        content: "azooKey - 自由自在なキーボードアプリ",
+        property: 'og:site_name',
+        content: 'azooKey - 自由自在なキーボードアプリ'
       },
-      { name: "twitter:url", content: location.href },
-      { name: "twitter:creator", content: "@azooKey_dev" },
-    ],
-  },
-};
+      { name: 'twitter:url', content: location.href },
+      { name: 'twitter:creator', content: '@azooKey_dev' }
+    ]
+  }
+}
 </script>
 
 <style>

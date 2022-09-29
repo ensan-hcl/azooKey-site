@@ -43,118 +43,118 @@
 </template>
 
 <script>
-import TheFooter from "../TheFooter.vue";
-import AppStoreLink from "../AppStoreLink.vue";
-import PageHeader from "../PageHeader.vue";
-import PageArticle from "../PageArticle.vue";
-import Vue from "vue";
-import VueClipboard from "vue-clipboard2";
+import TheFooter from '../TheFooter.vue'
+import AppStoreLink from '../AppStoreLink.vue'
+import PageHeader from '../PageHeader.vue'
+import PageArticle from '../PageArticle.vue'
+import Vue from 'vue'
+import VueClipboard from 'vue-clipboard2'
 
-Vue.use(VueClipboard);
+Vue.use(VueClipboard)
 
-const description = "azooKeyで使えるカスタムタブファイルを配布します。";
-const image = "https://azookey.netlify.app/static/og-image.png";
-const title = "カスタムタブ | azooKey - 自由自在なキーボードアプリ";
+const description = 'azooKeyで使えるカスタムタブファイルを配布します。'
+const image = 'https://azookey.netlify.app/static/og-image.png'
+const title = 'カスタムタブ | azooKey - 自由自在なキーボードアプリ'
 
 export default {
-  name: "CustomTabs",
+  name: 'CustomTabs',
   components: {
     TheFooter,
     AppStoreLink,
     PageHeader,
-    PageArticle,
+    PageArticle
   },
   metaInfo: {
-    title: "カスタムタブ",
+    title: 'カスタムタブ',
     meta: [
-      { name: "description", content: description },
-      { name: "twitter:description", content: description },
-      { property: "og:description", content: description },
+      { name: 'description', content: description },
+      { name: 'twitter:description', content: description },
+      { property: 'og:description', content: description },
 
-      { name: "twitter:image", content: image },
-      { property: "og:image", content: image },
+      { name: 'twitter:image', content: image },
+      { property: 'og:image', content: image },
 
-      { name: "twitter:title", content: title },
-      { property: "og:title", content: title },
-    ],
+      { name: 'twitter:title', content: title },
+      { property: 'og:title', content: title }
+    ]
   },
   mounted: function () {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
   },
-  data() {
+  data () {
     return {
       copy_succeed: {
-        target: "",
-        bool: false,
+        target: '',
+        bool: false
       },
       introductions: [
         {
-          header: "できること",
+          header: 'できること',
           contents:
-            "カスタムタブ機能はazooKeyにオリジナルのタブを追加することを可能にする新しい機能です。定型文を入力するキーボードを作ったり、入力しづらい記号を集めたキーボードを作ったりすることができます。",
+            'カスタムタブ機能はazooKeyにオリジナルのタブを追加することを可能にする新しい機能です。定型文を入力するキーボードを作ったり、入力しづらい記号を集めたキーボードを作ったりすることができます。'
         },
         {
-          header: "作り方",
-          contents: `azooKeyアプリ内ではフリック式・スクロール式のカスタムタブを作ることができます。さらに高度なカスタムタブを作るには<a href="https://github.com/ensan-hcl/CustardKit">CustardKit</a>が便利です。`,
-        },
+          header: '作り方',
+          contents: `azooKeyアプリ内ではフリック式・スクロール式のカスタムタブを作ることができます。さらに高度なカスタムタブを作るには<a href="https://github.com/ensan-hcl/CustardKit">CustardKit</a>が便利です。`
+        }
       ],
       customtabfiles: [
         {
-          title: "ヒエログリフ",
+          title: 'ヒエログリフ',
           description:
-            "ヒエログリフを簡単に入力できるスクロール式のカスタムタブです。",
+            'ヒエログリフを簡単に入力できるスクロール式のカスタムタブです。',
           link:
-            "https://gist.githubusercontent.com/ensan-hcl/39e8903d3e98bc366605de8f8313cc49/raw/bc376e33a941111de2879b2b4d846112ab1b0233/hieroglyphs.json",
-          image: require("../../assets/custard_hieroglyphs.jpg"),
+            'https://gist.githubusercontent.com/ensan-hcl/39e8903d3e98bc366605de8f8313cc49/raw/bc376e33a941111de2879b2b4d846112ab1b0233/hieroglyphs.json',
+          image: require('../../assets/custard_hieroglyphs.jpg')
         },
         {
-          title: "楔形文字",
+          title: '楔形文字',
           description:
-            "楔形文字を簡単に入力できるスクロール式のカスタムタブです。",
+            '楔形文字を簡単に入力できるスクロール式のカスタムタブです。',
           link:
-            "https://gist.githubusercontent.com/ensan-hcl/f2ab038b88ea197c74250739f170f023/raw/fe5f30f47c4e36aff884a0ba8d8957f57fcc170d/cuneiforms.json",
-          image: require("../../assets/custard_cuneiforms.jpg"),
+            'https://gist.githubusercontent.com/ensan-hcl/f2ab038b88ea197c74250739f170f023/raw/fe5f30f47c4e36aff884a0ba8d8957f57fcc170d/cuneiforms.json',
+          image: require('../../assets/custard_cuneiforms.jpg')
         },
         {
-          title: "装飾数字",
+          title: '装飾数字',
           description:
-            "装飾数字を簡単に入力できるPCスタイルのカスタムタブです。",
+            '装飾数字を簡単に入力できるPCスタイルのカスタムタブです。',
           link:
-            "https://gist.githubusercontent.com/ensan-hcl/4ee5fa1da7f010eba74b17b4166d3d4c/raw/5e177b31e2fe6666dcafcebfc9829ad6e6f6f616/number_font.json",
-          image: require("../../assets/custard_number_font.jpg"),
+            'https://gist.githubusercontent.com/ensan-hcl/4ee5fa1da7f010eba74b17b4166d3d4c/raw/5e177b31e2fe6666dcafcebfc9829ad6e6f6f616/number_font.json',
+          image: require('../../assets/custard_number_font.jpg')
         },
         {
-          title: "ギリシャ語フリック",
+          title: 'ギリシャ語フリック',
           description:
-            "ギリシャ語をフリックで入力できるテンキースタイルのカスタムタブです。",
+            'ギリシャ語をフリックで入力できるテンキースタイルのカスタムタブです。',
           link:
-            "https://gist.githubusercontent.com/ensan-hcl/6ec781da47118835f5c9efb0947ed5e2/raw/c6fcb530c1a6cbf2fafa1d8cf36c734c91c59937/flick_greek.json",
-          image: require("../../assets/custard_flick_greek.jpg"),
+            'https://gist.githubusercontent.com/ensan-hcl/6ec781da47118835f5c9efb0947ed5e2/raw/c6fcb530c1a6cbf2fafa1d8cf36c734c91c59937/flick_greek.json',
+          image: require('../../assets/custard_flick_greek.jpg')
         },
         {
-          title: "しっぽり明朝濁点",
+          title: 'しっぽり明朝濁点',
           description:
-            "しっぽり明朝の濁点付き仮名をフリックで入力できるテンキースタイルのカスタムタブです。",
+            'しっぽり明朝の濁点付き仮名をフリックで入力できるテンキースタイルのカスタムタブです。',
           link:
-            "https://gist.githubusercontent.com/ensan-hcl/b11974d00df380bfc37c248f10aa2a23/raw/199a33885ba89ba4b48541ee9c2566657a23809f/sippori_dakuten.json",
-          image: require("../../assets/custard_sippori_dakuten.jpg"),
-        },
-      ],
-    };
+            'https://gist.githubusercontent.com/ensan-hcl/b11974d00df380bfc37c248f10aa2a23/raw/199a33885ba89ba4b48541ee9c2566657a23809f/sippori_dakuten.json',
+          image: require('../../assets/custard_sippori_dakuten.jpg')
+        }
+      ]
+    }
   },
   methods: {
     onCopy: function (e) {
-      this.copy_succeed.target = e.text;
-      this.copy_succeed.bool = true;
-      //alert("You just copied: " + e.text);
+      this.copy_succeed.target = e.text
+      this.copy_succeed.bool = true
+      // alert("You just copied: " + e.text);
     },
     onError: function (e) {
-      this.copy_succeed.target = e.text;
-      this.copy_succeed.bool = false;
-      alert("コピーに失敗しました。");
-    },
-  },
-};
+      this.copy_succeed.target = e.text
+      this.copy_succeed.bool = false
+      alert('コピーに失敗しました。')
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

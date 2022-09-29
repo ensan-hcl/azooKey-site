@@ -50,32 +50,32 @@
 </template>
 
 <script>
-import TheFooter from "./TheFooter.vue";
-import isMobile from "ismobilejs";
-import { Carousel, Slide } from "vue-carousel";
-import AppStoreLink from "./AppStoreLink.vue";
-import PageHeader from "./PageHeader.vue";
-import PageArticle from "./PageArticle.vue";
+import TheFooter from './TheFooter.vue'
+import isMobile from 'ismobilejs'
+import { Carousel, Slide } from 'vue-carousel'
+import AppStoreLink from './AppStoreLink.vue'
+import PageHeader from './PageHeader.vue'
+import PageArticle from './PageArticle.vue'
 
-const phone = isMobile(window.navigator).phone;
-const title = "azooKey - 自由自在なキーボードアプリ";
+const phone = isMobile(window.navigator).phone
+const title = 'azooKey - 自由自在なキーボードアプリ'
 const description =
-  "azooKeyは日本語入力キーボードアプリです。カスタムキー・カスタムタブによる強力な拡張機能を備えるほか、着せ替え、片手モード、おしゃれな文字の入力などの便利な機能を搭載しています。";
-const image = "https://azookey.netlify.app/static/og-image.png";
+  'azooKeyは日本語入力キーボードアプリです。カスタムキー・カスタムタブによる強力な拡張機能を備えるほか、着せ替え、片手モード、おしゃれな文字の入力などの便利な機能を搭載しています。'
+const image = 'https://azookey.netlify.app/static/og-image.png'
 export default {
-  name: "Main",
+  name: 'Main',
   metaInfo: {
     title: title,
-    titleTemplate: "",
+    titleTemplate: '',
     meta: [
-      { name: "description", content: description },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description },
-      { name: "twitter:image", content: image },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:image", content: image },
-    ],
+      { name: 'description', content: description },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: description },
+      { name: 'twitter:image', content: image },
+      { property: 'og:title', content: title },
+      { property: 'og:description', content: description },
+      { property: 'og:image', content: image }
+    ]
   },
   components: {
     TheFooter,
@@ -83,52 +83,52 @@ export default {
     Slide,
     AppStoreLink,
     PageHeader,
-    PageArticle,
+    PageArticle
   },
   mounted: function () {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
   },
-  data() {
+  data () {
     return {
       phone: phone,
       introductions: [
         {
-          header: "カスタムキー",
+          header: 'カスタムキー',
           contents:
-            "azooKeyはカスタムキー機能を搭載する全く新しいキーボードです。お気に入りの絵文字や毎日使う記号を登録して、入力をもっと楽しくしましょう！",
+            'azooKeyはカスタムキー機能を搭載する全く新しいキーボードです。お気に入りの絵文字や毎日使う記号を登録して、入力をもっと楽しくしましょう！'
         },
         {
-          header: "キーボードの着せ替え",
+          header: 'キーボードの着せ替え',
           contents:
-            "azooKeyはキーボードの着せ替えに対応しています。簡単な設定でパートナーや推しの写真を背景に設定できます。あなただけの特別なキーボードを作りましょう！",
+            'azooKeyはキーボードの着せ替えに対応しています。簡単な設定でパートナーや推しの写真を背景に設定できます。あなただけの特別なキーボードを作りましょう！'
         },
         {
-          header: "カスタムタブ",
+          header: 'カスタムタブ',
           contents:
             `カスタマイズできるのはキーだけではありません。azooKeyではオリジナルの配列のキーボードを作成し、日本語入力と一緒に簡単に使うことができます。日本語入力とキーボードの拡張性を両立するazooKeyだけの機能です！詳しくは<a href="/CustomTabs">「カスタムタブについて」</a>をご覧ください！`
         },
         {
-          header: "候補の拡大表示",
+          header: '候補の拡大表示',
           contents:
-            "azooKeyは入力中に漢字を拡大表示出来るので、一瞬で字の構造が分かります。難しい漢字を手書きするため画像検索する必要はもうありません。",
+            'azooKeyは入力中に漢字を拡大表示出来るので、一瞬で字の構造が分かります。難しい漢字を手書きするため画像検索する必要はもうありません。'
         },
         {
-          header: "おしゃれなフォント",
+          header: 'おしゃれなフォント',
           contents:
-            "おしゃれフォントでの入力も対応。かわいい英数字が簡単に入力できます。チャットもプロフィールもハッシュタグも綺麗なフォントで彩りましょう！",
+            'おしゃれフォントでの入力も対応。かわいい英数字が簡単に入力できます。チャットもプロフィールもハッシュタグも綺麗なフォントで彩りましょう！'
         },
         {
-          header: "ユーザ辞書機能",
+          header: 'ユーザ辞書機能',
           contents:
-            "高機能なユーザ辞書機能を搭載。固有名詞など好きな単語を登録できるほか、日付の入力やランダムな変換も設定可能です。端末のユーザ辞書とも連携します。",
+            '高機能なユーザ辞書機能を搭載。固有名詞など好きな単語を登録できるほか、日付の入力やランダムな変換も設定可能です。端末のユーザ辞書とも連携します。'
         },
         {
-          header: "操作も簡単",
+          header: '操作も簡単',
           contents:
-            "フリックしたりなぞったりしてカーソルを移動する機能を搭載しています。フリック入力なら削除キーをフリックして文頭まで一括で削除する機能もついています。",
+            'フリックしたりなぞったりしてカーソルを移動する機能を搭載しています。フリック入力なら削除キーをフリックして文頭まで一括で削除する機能もついています。'
         },
         {
-          header: "便利な機能",
+          header: '便利な機能',
           contents: `<ul>
       <li>ローマ字入力でもフリック入力でも「大文字に固定」機能を搭載しています。</li>
       <li>「英語はローマ字で日本語はフリック」のような設定にもしっかり対応しています。</li>
@@ -138,33 +138,33 @@ export default {
       <li>全角数字「１２３」や上付き文字・下付き文字の「¹²³₄₅₆」にも変換できます。数式や化学式も簡単に書けます。</li>
       <li>半角カナ「ｱｲｳ」や濁点付き仮名「あ゙」も変換できます。</li>
       </ul>
-`,
+`
         },
         {
-          header: "使い方",
+          header: '使い方',
           contents: `<p>1. azooKeyを<a href="https://apps.apple.com/us/app/azookey/id1542709230">ダウンロード</a></p>
                     <p>2. アプリを開くと表示される手順に従ってazooKeyを有効化・お好みの設定に変更</p>
                      <p>3. キーボードを開いたら地球儀マークを長押ししてazooKeyを選択</p>
-        `,
+        `
         },
         {
-          header: "OS",
-          contents: "azooKeyはバージョン14.0以上のiOSに対応しています。最新のOSでの利用を常に推奨します。",
+          header: 'OS',
+          contents: 'azooKeyはバージョン14.0以上のiOSに対応しています。最新のOSでの利用を常に推奨します。'
         },
         {
-          header: "価格",
+          header: '価格',
           contents:
-            "アプリ本体・キーボードの利用・ともに無料です。現在課金が必要な機能は一切提供していません。",
+            'アプリ本体・キーボードの利用・ともに無料です。現在課金が必要な機能は一切提供していません。'
         },
         {
-          header: "個人情報について",
+          header: '個人情報について',
           contents:
-            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。利用にあたってフルアクセスの許可は不要です。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。',
-        },
-      ],
-    };
-  },
-};
+            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。利用にあたってフルアクセスの許可は不要です。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

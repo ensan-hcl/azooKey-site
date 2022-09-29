@@ -27,46 +27,46 @@
 </template>
 
 <script>
-import TheFooter from "../../TheFooter.vue";
-import PageHeader from "../../PageHeader.vue";
-import PageArticle from "../../PageArticle.vue";
-import ArticleHeader1 from "../../ArticleHeader1.vue";
+import TheFooter from '../../TheFooter.vue'
+import PageHeader from '../../PageHeader.vue'
+import PageArticle from '../../PageArticle.vue'
+import ArticleHeader1 from '../../ArticleHeader1.vue'
 
 const description =
-  "バージョン1.5へのアップデート後に表示されるアラートについて説明します。";
-const image = "https://azookey.netlify.app/static/og-image.png";
+  'バージョン1.5へのアップデート後に表示されるアラートについて説明します。'
+const image = 'https://azookey.netlify.app/static/og-image.png'
 const title =
-  "[ver1.5] アラートについて | azooKey - 自由自在なキーボードアプリ";
+  '[ver1.5] アラートについて | azooKey - 自由自在なキーボードアプリ'
 
 export default {
-  name: "Ver1_5_message",
+  name: 'Ver1_5_message',
   metaInfo: {
-    title: "[ver1.5] アラートについて",
+    title: '[ver1.5] アラートについて',
     meta: [
-      { name: "description", content: description },
-      { name: "twitter:description", content: description },
-      { property: "og:description", content: description },
+      { name: 'description', content: description },
+      { name: 'twitter:description', content: description },
+      { property: 'og:description', content: description },
 
-      { name: "twitter:image", content: image },
-      { property: "og:image", content: image },
+      { name: 'twitter:image', content: image },
+      { property: 'og:image', content: image },
 
-      { name: "twitter:title", content: title },
-      { property: "og:title", content: title },
-    ],
+      { name: 'twitter:title', content: title },
+      { property: 'og:title', content: title }
+    ]
   },
   components: {
     TheFooter,
     PageHeader,
     PageArticle,
-    ArticleHeader1,
+    ArticleHeader1
   },
-  data() {
-    return {};
+  data () {
+    return {}
   },
   mounted: function () {
-    window.scrollTo(0, 0);
-  },
-};
+    window.scrollTo(0, 0)
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

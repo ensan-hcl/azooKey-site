@@ -19,38 +19,38 @@
 </template>
 
 <script>
-import AppIcon from "./AppIcon.vue";
-import AppStoreLink from "./AppStoreLink.vue";
+import AppIcon from './AppIcon.vue'
+import AppStoreLink from './AppStoreLink.vue'
 
 export default {
-  name: "TheFooter",
+  name: 'TheFooter',
   components: {
     AppIcon,
-    AppStoreLink,
+    AppStoreLink
   },
-  data() {
+  data () {
     return {
       links: [
         {
-          name: "カスタムタブ",
-          destination: "/CustomTabs",
+          name: 'カスタムタブ',
+          destination: '/CustomTabs'
         },
         {
-          name: "利用規約",
-          destination: "/TermsOfService",
+          name: '利用規約',
+          destination: '/TermsOfService'
         },
         {
-          name: "プライバシーポリシー",
-          destination: "/PrivacyPolicy",
+          name: 'プライバシーポリシー',
+          destination: '/PrivacyPolicy'
         },
         {
-          name: "お問い合わせ",
-          destination: "/Contact",
-        },
-      ],
-    };
-  },
-};
+          name: 'お問い合わせ',
+          destination: '/Contact'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

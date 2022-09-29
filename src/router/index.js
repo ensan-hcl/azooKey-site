@@ -7,11 +7,10 @@ import TermsOfService from '@/components/pages/TermsOfService'
 import Ver1_5_message from '@/components/pages/messages/Ver1_5_message'
 import CustomTabs from '@/components/pages/CustomTabs'
 
-
 Vue.use(Router)
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   routes: [
     {
       path: '/',

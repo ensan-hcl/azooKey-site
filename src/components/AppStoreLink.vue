@@ -19,8 +19,8 @@
 
 <script>
 export default {
-  name: "AppStoreLink",
-};
+  name: 'AppStoreLink'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

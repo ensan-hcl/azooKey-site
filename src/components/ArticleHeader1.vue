@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: "ArticleHeader1",
-};
+  name: 'ArticleHeader1'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
