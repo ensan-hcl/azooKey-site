@@ -104,7 +104,7 @@ export default {
           description:
             'ヒエログリフを簡単に入力できるスクロール式のカスタムタブです。',
           link:
-            'https://gist.githubusercontent.com/ensan-hcl/39e8903d3e98bc366605de8f8313cc49/raw/bc376e33a941111de2879b2b4d846112ab1b0233/hieroglyphs.json',
+            'https://azookey.netlify.app/static/custard/hieroglyphs.json',
           image: require('../../assets/custard_hieroglyphs.jpg')
         },
         {
@@ -112,7 +112,7 @@ export default {
           description:
             '楔形文字を簡単に入力できるスクロール式のカスタムタブです。',
           link:
-            'https://gist.githubusercontent.com/ensan-hcl/f2ab038b88ea197c74250739f170f023/raw/fe5f30f47c4e36aff884a0ba8d8957f57fcc170d/cuneiforms.json',
+            'https://azookey.netlify.app/static/custard/cuneiforms.json',
           image: require('../../assets/custard_cuneiforms.jpg')
         },
         {
@@ -120,7 +120,7 @@ export default {
           description:
             '装飾数字を簡単に入力できるPCスタイルのカスタムタブです。',
           link:
-            'https://gist.githubusercontent.com/ensan-hcl/4ee5fa1da7f010eba74b17b4166d3d4c/raw/5e177b31e2fe6666dcafcebfc9829ad6e6f6f616/number_font.json',
+            'https://azookey.netlify.app/static/custard/number_font.json',
           image: require('../../assets/custard_number_font.jpg')
         },
         {
@@ -128,7 +128,7 @@ export default {
           description:
             'ギリシャ語をフリックで入力できるテンキースタイルのカスタムタブです。',
           link:
-            'https://gist.githubusercontent.com/ensan-hcl/6ec781da47118835f5c9efb0947ed5e2/raw/c6fcb530c1a6cbf2fafa1d8cf36c734c91c59937/flick_greek.json',
+            'https://azookey.netlify.app/static/custard/flick_greek.json',
           image: require('../../assets/custard_flick_greek.jpg')
         },
         {
@@ -136,7 +136,7 @@ export default {
           description:
             'しっぽり明朝の濁点付き仮名をフリックで入力できるテンキースタイルのカスタムタブです。',
           link:
-            'https://gist.githubusercontent.com/ensan-hcl/b11974d00df380bfc37c248f10aa2a23/raw/199a33885ba89ba4b48541ee9c2566657a23809f/sippori_dakuten.json',
+            'https://azookey.netlify.app/static/custard/sippori_dakuten.json',
           image: require('../../assets/custard_sippori_dakuten.jpg')
         }
       ]
