@@ -60,7 +60,7 @@ import PageArticle from './PageArticle.vue'
 const phone = isMobile(window.navigator).phone
 const title = 'azooKey - 自由自在なキーボードアプリ'
 const description =
-  'azooKeyは日本語入力キーボードアプリです。カスタムキー・カスタムタブによる強力な拡張機能を備えるほか、着せ替え、片手モード、おしゃれな文字の入力などの便利な機能を搭載しています。'
+  'azooKeyは強力なカスタマイズ機能を搭載した日本語入力キーボードです。普段使う日本語タブをカスタマイズするカスタムキー機能とオリジナルの配列のキーボードを作るカスタムタブ機能でどこまでも自由にカスタマイズができます。ライブ変換、着せ替え、ユーザ辞書など、快適な入力のための機能もしっかりサポートしています。'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 export default {
   name: 'Main',
@@ -96,6 +96,11 @@ export default {
           header: 'カスタムキー',
           contents:
             'azooKeyはカスタムキー機能を搭載する全く新しいキーボードです。お気に入りの絵文字や毎日使う記号を登録して、入力をもっと楽しくしましょう！'
+        },
+        {
+          header: '「ライブ変換」機能を搭載',
+          contents:
+            'macOSで人気の「ライブ変換」がiOSでも使えます。打った側から自動で変換してくれるので、快適に文章を書くことができます！'
         },
         {
           header: 'キーボードの着せ替え',
