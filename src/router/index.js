@@ -6,6 +6,7 @@ import PrivacyPolicy from '@/components/pages/PrivacyPolicy'
 import TermsOfService from '@/components/pages/TermsOfService'
 import Ver1_5_message from '@/components/pages/messages/Ver1_5_message'
 import CustomTabs from '@/components/pages/CustomTabs'
+import QA from '@/components/pages/QA'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/CustomTabs',
       name: 'CustomTabs',
       component: CustomTabs
+    },
+    {
+      path: '/QA',
+      name: 'QA',
+      component: QA
     },
     {
       path: '/messages/ver1_5',

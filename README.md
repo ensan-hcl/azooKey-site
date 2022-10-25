@@ -9,7 +9,7 @@
 npm install
 
 # apply lint
-npm run lint -- --fix
+npm run lint --fix
 
 # serve with hot reload at localhost:8080
 npm run dev

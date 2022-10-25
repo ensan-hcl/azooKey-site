@@ -44,6 +44,10 @@ export default {
           destination: '/PrivacyPolicy'
         },
         {
+          name: 'Q&A',
+          destination: '/QA'
+        },
+        {
           name: 'お問い合わせ',
           destination: '/Contact'
         }
