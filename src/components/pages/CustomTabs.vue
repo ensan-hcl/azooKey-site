@@ -52,7 +52,7 @@ import VueClipboard from 'vue-clipboard2'
 
 Vue.use(VueClipboard)
 
-const description = 'azooKeyで使えるカスタムタブファイルを配布します。'
+const description = 'カスタムタブはさまざまなレイアウト・配列を自由に実現することのできる機能です。azooKeyで使えるカスタムタブファイルを配布します。'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 const title = 'カスタムタブ | azooKey - 自由自在なキーボードアプリ'
 
@@ -99,6 +99,14 @@ export default {
         }
       ],
       customtabfiles: [
+        {
+          title: 'GODAN',
+          description:
+            'GODAN配列がazooKeyでも使えるようになるテンキースタイルのカスタムタブです。',
+          link:
+            'https://azookey.netlify.app/static/custard/godan.json',
+          image: require('../../assets/custard_godan.jpg')
+        },
         {
           title: 'ヒエログリフ',
           description:
