@@ -3,6 +3,9 @@
     <AppIcon></AppIcon>
     <AppStoreLink class="appstoreicon"></AppStoreLink>
     <div class="footer_links">
+      <a href="https://github.com/ensan-hcl/azooKey" class="link"
+        >azooKey on GitHub</a
+      >
       <a href="https://github.com/ensan-hcl/CustardKit" class="link"
         >CustardKit</a
       >

@@ -154,7 +154,7 @@ export default {
         },
         {
           header: 'OS',
-          contents: 'azooKeyはバージョン14.0以上のiOSに対応しています。最新のOSでの利用を常に推奨します。'
+          contents: 'azooKeyはバージョン15.0以上のiOSに対応しています。最新のOSでの利用を常に推奨します。'
         },
         {
           header: '価格',
@@ -165,6 +165,11 @@ export default {
           header: '個人情報について',
           contents:
             'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。利用にあたってフルアクセスの許可は不要です。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。'
+        },
+        {
+          header: 'このアプリについて',
+          contents:
+            'azooKeyはオープンソースソフトウェアとして開発されており、誰でもソースコードを閲覧し、利用し、配布することができます。<a href="https://github.com/ensan-hcl/azooKey">GitHub</a>で公開しています。'
         }
       ]
     }
