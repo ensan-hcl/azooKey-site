@@ -14,7 +14,7 @@ export default {
 <style scoped>
 img {
   max-width: 64.4px;
-  width: 22%;
+  width: 21.8%;
   border-radius: 12%;
 }
 </style>

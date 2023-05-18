@@ -66,7 +66,7 @@ export default {
 ::-webkit-full-page-media,
 :future,
 :root .appstoreicon {
-  top: 0px;
+  top: 20px;
 }
 /*chrome限定*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -79,19 +79,21 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.link:hover,
+.link:active {
+  background-color: #ccafaf;
+  border-radius: 4px;
+}
+
 .footer_box {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .footer_links {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-items: stretch;
+  align-items: center;
   flex-direction: column;
-  align-items: stretch;
-  text-align: center;
 }
 ul {
   list-style-type: none;

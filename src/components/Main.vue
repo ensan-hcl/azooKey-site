@@ -2,40 +2,36 @@
   <div>
     <PageHeader>
       <div align="center" v-if="phone">
-        <carousel
-          :autoplay="true"
-          :loop="true"
-          :scrollPerPage="false"
-          :paginationEnabled="false"
-        >
+        <carousel :autoplay="true" :loop="true" :scrollPerPage="false" :paginationEnabled="false">
           <slide>
-            <img src="../assets/s0.png" class="slide_item" />
+            <img :src="require('../assets/s0.png')" class="slide_item" />
           </slide>
           <slide>
-            <img src="../assets/s1.png" class="slide_item" />
+            <img :src="require('../assets/s1.png')" class="slide_item" />
           </slide>
           <slide>
-            <img src="../assets/s2.png" class="slide_item" />
+            <img :src="require('../assets/s2.png')" class="slide_item" />
           </slide>
           <slide>
-            <img src="../assets/s3.png" class="slide_item" />
+            <img :src="require('../assets/s3.png')" class="slide_item" />
           </slide>
         </carousel>
       </div>
       <div class="features" v-else>
-        <img src="../assets/s0.png" class="screenshot" />
-        <img src="../assets/s1.png" class="screenshot" />
-        <img src="../assets/s2.png" class="screenshot" />
-        <img src="../assets/s3.png" class="screenshot" />
+        <img :src="require('../assets/s0.png')" class="screenshot" />
+        <img :src="require('../assets/s1.png')" class="screenshot" />
+        <img :src="require('../assets/s2.png')" class="screenshot" />
+        <img :src="require('../assets/s3.png')" class="screenshot" />
       </div>
 
-      <div>
-        <img src="../assets/azooKeyLogo.png" class="icon" />
-      </div>
-      <img src="../assets/azooKeyTypo.png" class="typo" alt="azooKey" />
+      <div class="icon-container">
+  <img :src="require('../assets/azooKeyLogo.png')" class="icon" />
+</div>
+<div class="typo-container">
+  <img :src="require('../assets/azooKeyTypo.png')" class="typo" alt="azooKey" />
+</div>
       <h1>
-        <span class="text">自由自在な</span><span class="text">キーボード</span
-        ><span class="text">アプリ</span>
+        <span class="text">自由自在な<wbr>キーボード<wbr>アプリ</span>
       </h1>
       <AppStoreLink></AppStoreLink>
     </PageHeader>
@@ -133,6 +129,10 @@ export default {
             'フリックしたりなぞったりしてカーソルを移動する機能を搭載しています。フリック入力なら削除キーをフリックして文頭まで一括で削除する機能もついています。'
         },
         {
+          header: 'フルアクセスに対応',
+          contents: 'キーの振動フィードバック、クリップボードの履歴機能、ペーストボタンなど、フルアクセスを有効にすることでより便利な機能を利用することができます。もちろん、フルアクセスがオフでも全く問題なくご利用いただけます。'
+        },
+        {
           header: '便利な機能',
           contents: `<ul>
       <li>ローマ字入力でもフリック入力でも「大文字に固定」機能を搭載しています。</li>
@@ -164,7 +164,7 @@ export default {
         {
           header: '個人情報について',
           contents:
-            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。利用にあたってフルアクセスの許可は不要です。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。'
+            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。フルアクセスは一部機能を実現するためにのみ利用され、ユーザの許可なく外部に情報を送信することは絶対にありません。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。'
         },
         {
           header: 'このアプリについて',
@@ -205,6 +205,19 @@ export default {
   min-width: 300px;
   width: 44%;
 }
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.typo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .icon {
   margin-top: -5.2vw;
   margin-bottom: 20px;
@@ -224,11 +237,8 @@ export default {
   object-position: 0 100%;
 }
 .features {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-items: stretch;
   align-items: stretch;
   text-align: center;
 }

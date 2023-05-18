@@ -55,22 +55,26 @@ export default {
       qa_list: [
         {
           question: 'azooKeyの読み方を教えてください',
-          answer: '「あずーきー」です。'
+          answer: '「あずーきー」です。「あずき」と読んでも大丈夫です！'
         },
         {
           question: 'azooKeyのSNSはありますか？',
           answer:
-            '<a href="https://twitter.com/azooKey_dev">Twitter</a>でアップデート情報などを発信しています。'
+            '<a href="https://twitter.com/azooKey_dev">Twitter</a>と<a href="https://bsky.app/profile/azookey.bsky.social">Bluesky</a>でアップデート情報などを発信しています。'
+        },
+        {
+          question: 'azooKeyはオープンソースソフトウェアですか？',
+          answer: 'その通りです。<a href="https://github.com/ensan-hcl/azooKey">GitHub</a>でソースコードを公開し、オープンな開発を行っています。'
         },
         {
           question: 'azooKeyを作っているのは誰ですか？',
           answer:
-            'azooKeyは日本の大学生による個人開発で制作されたアプリです。2020年から約2年間に渡り継続的にメンテナンスを行っています。'
+            'azooKeyは日本の大学生が個人で開発しました。2020年から約2年半に渡り継続的にメンテナンスを行っています。'
         },
         {
           question: 'azooKeyの利用にフルアクセスは必要ですか？',
           answer:
-            '現在は不要です。ただ、フルアクセスを導入することで実現できる機能にも魅力的なものは多いため、将来的にフルアクセスを必要とする機能を導入する可能性もあります。'
+            '不要です。ただし、一部の機能でフルアクセスが必要になります。フルアクセスなしでもほとんど全ての機能を使えるため、積極的にフルアクセスを有効にする必要はありません。'
         },
         {
           question: '作ったカスタムタブをサイトに掲載して欲しいです',
@@ -83,7 +87,7 @@ export default {
         },
         {
           question: 'azooKeyにAndroid版はありますか？',
-          answer: 'ありません。キーボードアプリはプラットフォーム依存の実装が多く、個人での開発で両プラットフォームに対応することは困難であると考えています。'
+          answer: 'ありません。キーボードアプリはプラットフォーム依存の実装が多く、開発者一人では難しいと考えています。ただし、Androidやその他のプラットフォームへの移植を主体的に進めてくださる方がいれば、実現する可能性があります。'
         },
         {
           question: '技術的な部分について知りたいです',
@@ -93,12 +97,11 @@ export default {
         {
           question: 'azooKeyの開発に参加したいです',
           answer:
-            '現状azooKeyは個人のプロジェクトですが、開発に参加してくださる方がいれば大変助かります。ぜひ<a href="https://forms.gle/cj9sBac4XVaJDtzR9">ご連絡ください</a>。'
+            '開発に参加してくださる方がいれば大変助かります。まずは<a href="https://github.com/ensan-hcl/azooKey/blob/develop/docs/first_contribution.md">GitHubのドキュメント</a>などをご覧ください。'
         },
         {
-          question: 'azooKeyはオープンソースソフトウェアですか？',
-          answer:
-            '今のところは違います。将来的にOSS化をおこなうこともありえます。'
+          question: 'azooKeyを支援したいです',
+          answer: '一番の大きな支援は、azooKeyを宣伝していただくことです。また、余裕があれば<a href="https://github.com/sponsors/ensan-hcl">GitHub Sponsors</a>で寄付をいただけると、開発の励みになります。'
         }
       ]
     }
