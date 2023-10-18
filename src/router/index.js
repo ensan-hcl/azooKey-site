@@ -4,7 +4,6 @@ import Main from '@/components/Main'
 import Contact from '@/components/pages/Contact'
 import PrivacyPolicy from '@/components/pages/PrivacyPolicy'
 import TermsOfService from '@/components/pages/TermsOfService'
-import Ver1_5_message from '@/components/pages/messages/Ver1_5_message'
 import CustomTabs from '@/components/pages/CustomTabs'
 import QA from '@/components/pages/QA'
 
@@ -42,11 +41,6 @@ export default new Router({
       path: '/QA',
       name: 'QA',
       component: QA
-    },
-    {
-      path: '/messages/ver1_5',
-      name: 'Ver1_5_message',
-      component: Ver1_5_message
     }
   ]
 })
