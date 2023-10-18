@@ -11,7 +11,10 @@
         <h3>{{ item.header }}</h3>
         <p v-html="item.contents"></p>
       </div>
-      <h2>カスタムタブの配布</h2>
+      <h2>カスタムタブの作例</h2>
+      <p>
+        カスタムタブはとても自由度の高い機能です。そこでいくつか作例を紹介します。
+      </p>
       <p>
         カスタムタブファイルのURLを読み込むことで、ほかの人が作ったカスタムタブを使うこともできます。azooKeyが用意したいくつかのリンクを共有します。
       </p>
@@ -22,12 +25,7 @@
         <h3>{{ item.title }}</h3>
         <p v-html="item.description"></p>
         <p>
-          <button
-            type="button"
-            v-clipboard:copy="item.link"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError"
-          >
+          <button type="button" v-clipboard:copy="item.link" v-clipboard:success="onCopy" v-clipboard:error="onError">
             リンクをコピーする
           </button>
           <span v-if="copy_succeed.target == item.link && copy_succeed.bool">
@@ -36,6 +34,29 @@
           <input type="text" v-bind:value="item.link" readonly />
         </p>
         <img v-bind:src="item.image" class="screenshot_img" />
+      </div>
+      <div v-for="authorItem in user_made_customtabfiles" :key="authorItem.author">
+        <h3 v-html="authorItem.author + 'さまのカスタムタブ'"></h3>
+        <p v-html="'連絡先: ' + authorItem.author_contacts"></p>
+        <p v-html="authorItem.description"></p>
+        <blockquote>
+          <p v-html="authorItem.author_description"></p>
+        </blockquote>
+        <div v-for="image in authorItem.images" :key="image">
+          <img v-bind:src="image" class="screenshot_img" />
+        </div>
+        <div v-for="item in authorItem.files" :key="item.link">
+          <h4>{{ item.title }}</h4>
+          <p>
+            <button type="button" v-clipboard:copy="item.link" v-clipboard:success="onCopy" v-clipboard:error="onError">
+              リンクをコピーする
+            </button>
+            <span v-if="copy_succeed.target == item.link && copy_succeed.bool">
+              ✔️
+            </span>
+            <input type="text" v-bind:value="item.link" readonly />
+          </p>
+        </div>
       </div>
     </PageArticle>
     <TheFooter></TheFooter>
@@ -81,7 +102,7 @@ export default {
   mounted: function () {
     window.scrollTo(0, 0)
   },
-  data () {
+  data: function () {
     return {
       copy_succeed: {
         target: '',
@@ -147,6 +168,56 @@ export default {
             'https://azookey.netlify.app/static/custard/sippori_dakuten.json',
           image: require('../../assets/custard_sippori_dakuten.jpg')
         }
+      ],
+      user_made_customtabfiles: [
+        {
+          author: '森プロジェクト',
+          images: [require('../../assets/mori_project_custard_iPad_fifty.jpg'), require('../../assets/mori_project_custard_iPhone_fifty.jpg')],
+          description: '森プロジェクトさまから工夫を凝らした五十音のキーボードのカスタムタブファイルをご提供いただきました。iPad版は3ファイル、iPhone版は4ファイルあります。',
+          author_description: `あったらいいなと思う機能を追加した五十音キーボードです。画面端にあるキー（ア行とワ行）を横にフリックするとカーソル移動ができます。<br>
+文字キーをどれでも下フリックすると確定できます。濁音は文字キーの左右両側のフリックおよび長押しに、半濁音・拗音・促音は上フリックに割り当てました。似た記号はフリックや長押しにまとめることでキーの数を減らしてすっきりさせました。<br>
+中央最下段のキーを下フリックするとキーボードをしまえます。英数モードの状態で英数切り替えボタンをもう一度タップすると大文字入力モード（caps lockと同じ）になります。iPad版の中央最上段にはフリックでカーソルを動かすキーを配置しました。<br>
+括弧や句読点を入力すると自動的に確定しますが、iPhone版五十音キーボードでは長押しすることで、違う種類の括弧や句読点を変換候補から選べます。<br><br>
+iPhone版も両手持ちでのタイピングを想定して作りました。五十音順が好きな方は是非使ってみてください！なお、ご使用は自己責任で行ってください。JSONファイルはテキストデータですので、テキストエディタやパソコンのウェブブラウザ等で中身をご確認いただけます。`,
+          author_contacts: "<a href='https://twitter.com/mori_project'>𝕏（Twitter）</a>",
+          files: [
+            {
+              title: 'iPad用かな五十音順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPad_kana_fifty.json'
+            },
+            {
+              title: 'iPad用英数小文字アルファベット順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPad_english_lower.json'
+            },
+            {
+              title: 'iPad用英数大文字アルファベット順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPad_english_upper.json'
+            },
+            {
+              title: 'iPhone用かな五十音順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPhone_kana_fifty.json'
+            },
+            {
+              title: 'iPhone用英数小文字アルファベット順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPhone_english_lower.json'
+            },
+            {
+              title: 'iPhone用英数大文字アルファベット順キーボード',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPhone_english_upper.json'
+            },
+            {
+              title: 'iPhone用数字テンキー',
+              link:
+                'https://azookey.netlify.app/static/mori_project_custard/iPhone_number_tenkey.json'
+            }
+          ]
+        }
       ]
     }
   },
@@ -186,12 +257,15 @@ button {
   border: none;
   background-color: #eeeeee;
 }
+
 button:active {
   background-color: #dddddd;
 }
+
 button:hover {
   background-color: #dddddd;
 }
+
 input {
   width: 50%;
   font-size: 0.8rem;
@@ -202,6 +276,7 @@ input {
   border-color: #888888;
   color: #777777;
 }
+
 @media (max-width: 480px) {
   input {
     width: 100%;
@@ -214,11 +289,23 @@ input {
     color: #777777;
   }
 }
+
 h2 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .text {
   display: inline-block;
+}
+
+blockquote {
+  border-left: solid 5px #dddddd;
+  padding-left: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #666666;
 }
 </style>

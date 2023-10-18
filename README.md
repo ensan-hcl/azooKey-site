@@ -31,3 +31,7 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## License
+
+`static/mori_project_custard/` is not under MIT LICENSE. For other part of this repository, all sources are under MIT LICENSE.
