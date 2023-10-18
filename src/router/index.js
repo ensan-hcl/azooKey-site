@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
 import Contact from '@/components/pages/Contact'
+import OpenSource from '@/components/pages/OpenSource'
 import PrivacyPolicy from '@/components/pages/PrivacyPolicy'
 import TermsOfService from '@/components/pages/TermsOfService'
 import CustomTabs from '@/components/pages/CustomTabs'
@@ -36,6 +37,11 @@ export default new Router({
       path: '/CustomTabs',
       name: 'CustomTabs',
       component: CustomTabs
+    },
+    {
+      path: '/OpenSource',
+      name: 'OpenSource',
+      component: OpenSource
     },
     {
       path: '/QA',

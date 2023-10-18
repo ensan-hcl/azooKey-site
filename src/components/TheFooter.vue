@@ -1,13 +1,8 @@
 <template>
   <footer class="footer_box">
-    <AppIcon></AppIcon>
-    <AppStoreLink class="appstoreicon"></AppStoreLink>
     <div class="footer_links">
       <a href="https://github.com/ensan-hcl/azooKey" class="link"
         >azooKey on GitHub</a
-      >
-      <a href="https://github.com/ensan-hcl/CustardKit" class="link"
-        >CustardKit</a
       >
       <router-link
         v-for="link in links"
@@ -18,6 +13,8 @@
         {{ link.name }}
       </router-link>
     </div>
+    <AppIcon></AppIcon>
+    <AppStoreLink class="appstoreicon"></AppStoreLink>
   </footer>
 </template>
 
@@ -34,6 +31,10 @@ export default {
   data () {
     return {
       links: [
+        {
+          name: 'オープンソース',
+          destination: '/OpenSource'
+        },
         {
           name: 'カスタムタブ',
           destination: '/CustomTabs'
@@ -91,9 +92,16 @@ export default {
 }
 .footer_links {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer_links {
+    flex-direction: column;
+  }
 }
 ul {
   list-style-type: none;
