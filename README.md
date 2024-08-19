@@ -2,6 +2,10 @@
 
 > Official site of azooKey
 
+## License
+
+`static/mori_project_custard/` is not under MIT LICENSE. For other part of this repository, all sources are under MIT LICENSE.
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
