@@ -1,6 +1,6 @@
-# azookey-site-vue3
+# azookey-app
 
-This template should help get you started developing with Vue 3 in Vite.
+> Official site of azooKey
 
 ## Recommended IDE Setup
 
