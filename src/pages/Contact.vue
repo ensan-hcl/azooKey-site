@@ -21,11 +21,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TheFooter from '../TheFooter.vue'
-import ArticleHeader1 from '../ArticleHeader1.vue'
-import ArticleHeaderLogo from '../ArticleHeaderLogo.vue'
-import PageHeader from '../PageHeader.vue'
-import PageArticle from '../PageArticle.vue'
+import TheFooter from '../components/TheFooter.vue'
+import ArticleHeader1 from '../components/ArticleHeader1.vue'
+import ArticleHeaderLogo from '../components/ArticleHeaderLogo.vue'
+import PageHeader from '../components/PageHeader.vue'
+import PageArticle from '../components/PageArticle.vue'
 
 const description = 'azooKeyに関するお問い合わせをお寄せください。'
 const image = 'https://azookey.netlify.app/static/og-image.png'

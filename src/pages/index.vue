@@ -42,11 +42,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TheFooter from './TheFooter.vue'
+import TheFooter from '../components/TheFooter.vue'
 import { Carousel, Slide } from 'vue3-carousel'
-import AppStoreLink from './AppStoreLink.vue'
-import PageHeader from './PageHeader.vue'
-import PageArticle from './PageArticle.vue'
+import AppStoreLink from '../components/AppStoreLink.vue'
+import PageHeader from '../components/PageHeader.vue'
+import PageArticle from '../components/PageArticle.vue'
 import isMobile from 'ismobilejs'
 
 const phone = isMobile(window.navigator).phone

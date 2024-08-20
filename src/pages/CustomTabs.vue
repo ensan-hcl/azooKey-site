@@ -56,9 +56,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useClipboard } from '@vueuse/core'
-import TheFooter from '../TheFooter.vue'
-import PageHeader from '../PageHeader.vue'
-import PageArticle from '../PageArticle.vue'
+import TheFooter from '../components/TheFooter.vue'
+import PageHeader from '../components/PageHeader.vue'
+import PageArticle from '../components/PageArticle.vue'
 
 const copy_succeed = ref({
   target: '',

@@ -39,10 +39,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TheFooter from '../TheFooter.vue'
-import ArticleHeader1 from '../ArticleHeader1.vue'
-import PageHeader from '../PageHeader.vue'
-import PageArticle from '../PageArticle.vue'
+import TheFooter from '../components/TheFooter.vue'
+import ArticleHeader1 from '../components/ArticleHeader1.vue'
+import PageHeader from '../components/PageHeader.vue'
+import PageArticle from '../components/PageArticle.vue'
 
 const description = 'プライバシーポリシー'
 const image = 'https://azookey.netlify.app/static/og-image.png'

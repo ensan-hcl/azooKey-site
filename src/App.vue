@@ -6,24 +6,31 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useRoute } from 'vue-router'
+import { router } from './router'
+
+const route = useRoute()
+const url = router.resolve(route.fullPath).href
 
 export default defineComponent({
   name: 'App',
 
+  onMounted(() => {
   metaInfo: {
     titleTemplate: '%s | azooKey - 自由自在なキーボードアプリ',
     meta: [
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:type', content: 'product' },
-      { property: 'og:url', content: location.href },
+      { property: 'og:url', content: url },
       {
         property: 'og:site_name',
         content: 'azooKey - 自由自在なキーボードアプリ'
       },
-      { name: 'twitter:url', content: location.href },
+      { name: 'twitter:url', content: url },
       { name: 'twitter:creator', content: '@azooKey_dev' }
     ]
   }
+}
 })
 </script>
 

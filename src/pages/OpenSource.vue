@@ -129,10 +129,10 @@
 </template>
 
 <script lang="ts">
-import TheFooter from '../TheFooter.vue'
-import PageHeader from '../PageHeader.vue'
-import PageArticle from '../PageArticle.vue'
-import ArticleHeader1 from '../ArticleHeader1.vue'
+import TheFooter from '../components/TheFooter.vue'
+import PageHeader from '../components/PageHeader.vue'
+import PageArticle from '../components/PageArticle.vue'
+import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import { defineComponent } from 'vue'
 import { useScriptTag, useWindowScroll } from '@vueuse/core'
 
