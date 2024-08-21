@@ -10,26 +10,23 @@
       <p>azooKeyや関連ソフトウェアをオープンソースで公開しています。</p>
       <h2>azooKey app</h2>
       <p>
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/azooKey"
           data-icon="octicon-star"
           aria-label="Star ensan-hcl/azooKey on GitHub"
-          >Star</a
+          >Star</GitHubButton
         >
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/azooKey/fork"
           data-icon="octicon-repo-forked"
           aria-label="Fork ensan-hcl/azooKey on GitHub"
-          >Fork</a
+          >Fork</GitHubButton
         >
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/sponsors/ensan-hcl"
           data-icon="octicon-heart"
           aria-label="Sponsor @ensan-hcl on GitHub"
-          >Sponsor</a
+          >Sponsor</GitHubButton
         >
       </p>
       <p>
@@ -38,19 +35,18 @@
       </p>
       <h2>AzooKeyKanaKanjiConverter</h2>
       <p>
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter"
           data-icon="octicon-star"
           aria-label="Star ensan-hcl/AzooKeyKanaKanjiConverter on GitHub"
-          >Star</a
+          >Star</GitHubButton
         >
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter/fork"
           data-icon="octicon-repo-forked"
-          aria-label="Fork ensan-hcl/AzooKeyKanaKanjiConverter on GitHub"
-          >Fork</a
+          aria-label="Fork ensan-hcl/AzooKeyKanaKanjiConverter on
+          GitHub"
+          >Fork</GitHubButton
         >
       </p>
       <p>
@@ -66,19 +62,17 @@
 
       <h2>CustardKit</h2>
       <p>
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/CustardKit"
           data-icon="octicon-star"
           aria-label="Star ensan-hcl/CustardKit on GitHub"
-          >Star</a
+          >Star</GitHubButton
         >
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/CustardKit/fork"
           data-icon="octicon-repo-forked"
           aria-label="Fork ensan-hcl/CustardKit on GitHub"
-          >Fork</a
+          >Fork</GitHubButton
         >
       </p>
       <p>
@@ -87,19 +81,17 @@
       </p>
       <h2>azooKey official site</h2>
       <p>
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/azooKey-site"
           data-icon="octicon-star"
           aria-label="Star ensan-hcl/azooKey-site on GitHub"
-          >Star</a
+          >Star</GitHubButton
         >
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter/issues"
           data-icon="octicon-issue-opened"
           aria-label="Issue ensan-hcl/AzooKeyKanaKanjiConverter on GitHub"
-          >Issue</a
+          >Issue</GitHubButton
         >
       </p>
       <p>
@@ -108,12 +100,11 @@
       </p>
       <h2>開発を応援する</h2>
       <p>
-        <a
-          class="github-button"
+        <GitHubButton
           href="https://github.com/sponsors/ensan-hcl"
           data-icon="octicon-heart"
           aria-label="Sponsor @ensan-hcl on GitHub"
-          >Sponsor</a
+          >Sponsor</GitHubButton
         >
       </p>
       <p>
@@ -134,8 +125,8 @@ import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
 import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import { defineComponent } from 'vue'
-import { useScriptTag, useWindowScroll } from '@vueuse/core'
 import { useHead, useSeoMeta } from '@unhead/vue'
+import GitHubButton from 'vue-github-button'
 
 const description =
   'iOS・iPadOS対応のキーボードアプリazooKeyはGitHubでオープンソースで開発・公開しています'
@@ -165,14 +156,8 @@ export default defineComponent({
     TheFooter,
     ArticleHeader1,
     PageHeader,
-    PageArticle
-  },
-
-  setup() {
-    // GitHub ボタンのスクリプトをインジェクト
-    useScriptTag('https://buttons.github.io/buttons.js', () => {}, { async: true, defer: true })
-
-    return {}
+    PageArticle,
+    GitHubButton
   }
 })
 </script>
