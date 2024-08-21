@@ -2,14 +2,7 @@
   <div>
     <!-- Page Header with Conditional Carousel or Static Images -->
     <PageHeader>
-      <div align="center" v-if="phone">
-        <carousel :loop="true" :scrollPerPage="false" :paginationEnabled="false">
-          <slide v-for="i in 4" :key="i">
-            <img :src="`/static/assets/s${i - 1}.png`" class="slide_item" />
-          </slide>
-        </carousel>
-      </div>
-      <div class="features" v-else>
+      <div class="features">
         <img v-for="i in 4" :key="i" :src="`/static/assets/s${i - 1}.png`" class="screenshot" />
       </div>
 
@@ -43,7 +36,6 @@
 import { defineComponent } from 'vue'
 
 import TheFooter from '../components/TheFooter.vue'
-import { Carousel, Slide } from 'vue3-carousel'
 import AppStoreLink from '../components/AppStoreLink.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
@@ -79,8 +71,6 @@ export default defineComponent({
 
   components: {
     TheFooter,
-    Carousel,
-    Slide,
     AppStoreLink,
     PageHeader,
     PageArticle
@@ -194,14 +184,6 @@ export default defineComponent({
 }
 .VueCarousel-slide .slider-inner {
   height: 100%;
-}
-.slide_item {
-  position: relative;
-  z-index: 1;
-  width: 44vw;
-  height: 48.4vw;
-  object-fit: cover;
-  object-position: 0 100%;
 }
 .typo {
   max-width: 500px;

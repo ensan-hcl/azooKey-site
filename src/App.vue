@@ -31,6 +31,7 @@ useSeoMeta({
 body {
   /*chrome系ブラウザは8pxのmarginを強制的に指定する*/
   margin: 0px;
+  word-break: auto-phrase;
 }
 
 footer {
