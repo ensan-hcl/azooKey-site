@@ -81,10 +81,6 @@ export default defineComponent({
     PageArticle
   },
 
-  mounted: () => {
-    window.scrollTo(0, 0)
-  },
-
   data() {
     return {
       phone: phone,
@@ -106,7 +102,7 @@ export default defineComponent({
         },
         {
           header: 'カスタムタブ',
-          contents: `カスタマイズできるのはキーだけではありません。azooKeyではオリジナルの配列のキーボードを作成し、日本語入力と一緒に簡単に使うことができます。日本語入力とキーボードの拡張性を両立するazooKeyだけの機能です！詳しくは<a href="/CustomTabs">「カスタムタブについて」</a>をご覧ください！`
+          contents: `カスタマイズできるのはキーだけではありません。azooKeyではオリジナルの配列のキーボードを作成し、日本語入力と一緒に簡単に使うことができます。日本語入力とキーボードの拡張性を両立するazooKeyだけの機能です！詳しくは<RouterLink to="/CustomTabs">「カスタムタブについて」</RouterLink>をご覧ください！`
         },
         {
           header: '候補の拡大表示',
@@ -166,7 +162,7 @@ export default defineComponent({
         {
           header: '個人情報について',
           contents:
-            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。フルアクセスは一部機能を実現するためにのみ利用され、ユーザの許可なく外部に情報を送信することは絶対にありません。詳しくは<a href="/PrivacyPolicy">プライバシーポリシー</a>をお読みください。'
+            'azooKeyはユーザが入力した内容やその他の個人情報を一切収集しません。フルアクセスは一部機能を実現するためにのみ利用され、ユーザの許可なく外部に情報を送信することは絶対にありません。詳しくは<RouterLink to="/PrivacyPolicy">プライバシーポリシー</RouterLink>をお読みください。'
         },
         {
           header: 'このアプリについて',

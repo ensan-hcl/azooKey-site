@@ -4,7 +4,7 @@
       <ArticleHeader1>Q&A</ArticleHeader1>
     </PageHeader>
     <PageArticle>
-      <p>このQ&Aで解決しない場合、<a href="./Contact">お問い合わせ</a>ください。</p>
+      <p>このQ&Aで解決しない場合、<RouterLink to="./Contact">お問い合わせ</RouterLink>ください。</p>
       <div v-for="qa in qa_list" :key="qa.question">
         <h2>{{ qa.question }}</h2>
         <p v-html="qa.answer"></p>
@@ -110,10 +110,6 @@ export default defineComponent({
         }
       ]
     }
-  },
-
-  mounted: () => {
-    window.scrollTo(0, 0)
   }
 })
 </script>

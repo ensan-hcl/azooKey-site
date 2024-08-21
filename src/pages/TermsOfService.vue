@@ -44,7 +44,8 @@
 
       <h2>4.連絡手段</h2>
       <p>
-        ご不明な点があれば、<a href="./Contact">お問い合わせ</a>よりお気軽にお問い合わせください。
+        ご不明な点があれば、<RouterLink to="./Contact">お問い合わせ</RouterLink
+        >よりお気軽にお問い合わせください。
       </p>
     </PageArticle>
     <TheFooter></TheFooter>
@@ -58,6 +59,7 @@ import TheFooter from '../components/TheFooter.vue'
 import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
+import { RouterLink } from 'vue-router'
 
 const description = '利用規約'
 const image = 'https://azookey.netlify.app/static/og-image.png'
@@ -86,10 +88,6 @@ export default defineComponent({
     ArticleHeader1,
     PageHeader,
     PageArticle
-  },
-
-  mounted: () => {
-    window.scrollTo(0, 0)
   }
 })
 </script>

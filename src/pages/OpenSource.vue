@@ -167,11 +167,6 @@ export default defineComponent({
   },
 
   setup() {
-    // スクロール位置をページの先頭に設定
-    const { x, y } = useWindowScroll()
-    x.value = 0
-    y.value = 0
-
     // GitHub ボタンのスクリプトをインジェクト
     useScriptTag('https://buttons.github.io/buttons.js', () => {}, { async: true, defer: true })
 

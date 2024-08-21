@@ -4,39 +4,37 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { useRoute } from 'vue-router'
-import { router } from './router'
+<script lang="ts" setup>
+import { onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useHead, useSeoMeta } from '@unhead/vue'
+
+import '@fontsource-variable/noto-sans-jp/wght.css'
 
 const route = useRoute()
-const url = router.resolve(route.fullPath).href
+const router = useRouter()
 
-export default defineComponent({
-  name: 'App',
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    const url = router.resolve(route.fullPath).href
 
-  onMounted(() => {
-  metaInfo: {
-    titleTemplate: '%s | azooKey - 自由自在なキーボードアプリ',
-    meta: [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { property: 'og:type', content: 'product' },
-      { property: 'og:url', content: url },
-      {
-        property: 'og:site_name',
-        content: 'azooKey - 自由自在なキーボードアプリ'
-      },
-      { name: 'twitter:url', content: url },
-      { name: 'twitter:creator', content: '@azooKey_dev' }
-    ]
+    useHead({
+      titleTemplate: '%s | azooKey - 自由自在なキーボードアプリ'
+    })
+    useSeoMeta({
+      ogSiteName: 'azooKey - 自由自在なキーボードアプリ',
+      ogType: 'website',
+      ogUrl: url,
+      twitterCard: 'summary_large_image',
+      twitterCreator: '@azooKey_dev'
+    })
   }
-}
 })
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans JP Variable';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
