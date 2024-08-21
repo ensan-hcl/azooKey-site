@@ -44,7 +44,7 @@
 
       <h2>4.連絡手段</h2>
       <p>
-        ご不明な点があれば、<RouterLink to="./Contact">お問い合わせ</RouterLink
+        ご不明な点があれば、<router-link to="./Contact">お問い合わせ</router-link
         >よりお気軽にお問い合わせください。
       </p>
     </PageArticle>
@@ -59,7 +59,6 @@ import TheFooter from '../components/TheFooter.vue'
 import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
-import { RouterLink } from 'vue-router'
 import { useHead, useSeoMeta } from '@unhead/vue'
 
 const description = '利用規約'

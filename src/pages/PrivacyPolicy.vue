@@ -29,7 +29,7 @@
       </p>
       <h2>4.連絡手段</h2>
       <p>
-        ※ご不明な点があれば、<RouterLink to="./Contact">お問い合わせ</RouterLink
+        ※ご不明な点があれば、<router-link to="./Contact">お問い合わせ</router-link
         >よりお気軽にお問い合わせください。
       </p>
     </PageArticle>

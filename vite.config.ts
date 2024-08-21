@@ -5,25 +5,10 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import vueDevTools from "vite-plugin-vue-devtools";
 import tsconfigPaths from "vite-tsconfig-paths";
-import VueRouter from "unplugin-vue-router/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [
-		tsconfigPaths(),
-		VueRouter({
-			routesFolder: [
-				{
-					src: "src/pages",
-					path: "",
-				},
-			],
-			extensions: [".vue"],
-		}),
-		vue(),
-		vueJsx(),
-		vueDevTools(),
-	],
+	plugins: [tsconfigPaths(), vue(), vueJsx(), vueDevTools()],
 	resolve: {
 		alias: {
 			"@": fileURLToPath(new URL("./src", import.meta.url)),

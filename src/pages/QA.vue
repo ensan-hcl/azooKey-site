@@ -4,7 +4,9 @@
       <ArticleHeader1>Q&A</ArticleHeader1>
     </PageHeader>
     <PageArticle>
-      <p>このQ&Aで解決しない場合、<RouterLink to="./Contact">お問い合わせ</RouterLink>ください。</p>
+      <p>
+        このQ&Aで解決しない場合、<router-link to="./Contact">お問い合わせ</router-link>ください。
+      </p>
       <div v-for="qa in qa_list" :key="qa.question">
         <h2>{{ qa.question }}</h2>
         <p v-html="qa.answer"></p>

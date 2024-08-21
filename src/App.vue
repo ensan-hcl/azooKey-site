@@ -5,30 +5,18 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
 import { useHead, useSeoMeta } from '@unhead/vue'
 
 import '@fontsource-variable/noto-sans-jp/wght.css'
 
-const route = useRoute()
-const router = useRouter()
-
-onMounted(() => {
-  if (typeof window !== 'undefined') {
-    const url = router.resolve(route.fullPath).href
-
-    useHead({
-      titleTemplate: '%s azooKey - 自由自在なキーボードアプリ'
-    })
-    useSeoMeta({
-      ogSiteName: 'azooKey - 自由自在なキーボードアプリ',
-      ogType: 'website',
-      ogUrl: url,
-      twitterCard: 'summary_large_image',
-      twitterCreator: '@azooKey_dev'
-    })
-  }
+useHead({
+  titleTemplate: '%s azooKey - 自由自在なキーボードアプリ'
+})
+useSeoMeta({
+  ogSiteName: 'azooKey - 自由自在なキーボードアプリ',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterCreator: '@azooKey_dev'
 })
 </script>
 

@@ -53,7 +53,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ref } from 'vue'
 import { useClipboard } from '@vueuse/core'
 import TheFooter from '../components/TheFooter.vue'
