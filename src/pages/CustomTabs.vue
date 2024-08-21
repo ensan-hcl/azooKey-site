@@ -59,6 +59,27 @@ import { useClipboard } from '@vueuse/core'
 import TheFooter from '../components/TheFooter.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
+import { useHead, useSeoMeta } from '@unhead/vue'
+
+const description = 'カスタムタブ機能'
+const image = 'https://azookey.netlify.app/static/og-image.png'
+const title = 'カスタムタブ | azooKey - 自由自在なキーボードアプリ'
+
+useHead({
+  title: () => 'カスタムタブ |'
+})
+
+useSeoMeta({
+  ogTitle: () => title,
+  twitterTitle: () => title,
+
+  description: () => description,
+  ogDescription: () => description,
+  twitterDescription: () => description,
+
+  ogImage: () => image,
+  twitterImage: () => image
+})
 
 const copy_succeed = ref({
   target: '',

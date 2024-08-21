@@ -60,28 +60,30 @@ import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
 import { RouterLink } from 'vue-router'
+import { useHead, useSeoMeta } from '@unhead/vue'
 
 const description = '利用規約'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 const title = '利用規約 | azooKey - 自由自在なキーボードアプリ'
 
+useHead({
+  title: '利用規約 |'
+})
+
+useSeoMeta({
+  ogTitle: () => title,
+  twitterTitle: () => title,
+
+  description: () => description,
+  ogDescription: () => description,
+  twitterDescription: () => description,
+
+  ogImage: () => image,
+  twitterImage: () => image
+})
+
 export default defineComponent({
   name: 'TermsOfService',
-
-  metaInfo: {
-    title: '利用規約',
-    meta: [
-      { name: 'description', content: description },
-      { name: 'twitter:description', content: description },
-      { property: 'og:description', content: description },
-
-      { name: 'twitter:image', content: image },
-      { property: 'og:image', content: image },
-
-      { name: 'twitter:title', content: title },
-      { property: 'og:title', content: title }
-    ]
-  },
 
   components: {
     TheFooter,

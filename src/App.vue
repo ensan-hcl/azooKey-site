@@ -19,7 +19,7 @@ onMounted(() => {
     const url = router.resolve(route.fullPath).href
 
     useHead({
-      titleTemplate: '%s | azooKey - 自由自在なキーボードアプリ'
+      titleTemplate: '%s azooKey - 自由自在なキーボードアプリ'
     })
     useSeoMeta({
       ogSiteName: 'azooKey - 自由自在なキーボードアプリ',

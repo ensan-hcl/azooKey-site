@@ -135,11 +135,28 @@ import PageArticle from '../components/PageArticle.vue'
 import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import { defineComponent } from 'vue'
 import { useScriptTag, useWindowScroll } from '@vueuse/core'
+import { useHead, useSeoMeta } from '@unhead/vue'
 
 const description =
   'iOS・iPadOS対応のキーボードアプリazooKeyはGitHubでオープンソースで開発・公開しています'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 const title = 'オープンソース | azooKey - 自由自在なキーボードアプリ'
+
+useHead({
+  title: () => 'オープンソース |'
+})
+
+useSeoMeta({
+  ogTitle: () => title,
+  twitterTitle: () => title,
+
+  description: () => description,
+  ogDescription: () => description,
+  twitterDescription: () => description,
+
+  ogImage: () => image,
+  twitterImage: () => image
+})
 
 export default defineComponent({
   name: 'OpenSource',
@@ -149,21 +166,6 @@ export default defineComponent({
     ArticleHeader1,
     PageHeader,
     PageArticle
-  },
-
-  metaInfo: {
-    title: 'オープンソース',
-    meta: [
-      { name: 'description', content: description },
-      { name: 'twitter:description', content: description },
-      { property: 'og:description', content: description },
-
-      { name: 'twitter:image', content: image },
-      { property: 'og:image', content: image },
-
-      { name: 'twitter:title', content: title },
-      { property: 'og:title', content: title }
-    ]
   },
 
   setup() {

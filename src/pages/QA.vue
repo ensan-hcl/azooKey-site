@@ -21,28 +21,30 @@ import TheFooter from '../components/TheFooter.vue'
 import ArticleHeader1 from '../components/ArticleHeader1.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
+import { useHead, useSeoMeta } from '@unhead/vue'
 
 const description = 'azooKeyに関するQ&Aをまとめています。'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 const title = 'Q&A | azooKey - 自由自在なキーボードアプリ'
 
+useHead({
+  title: () => 'Q&A |'
+})
+
+useSeoMeta({
+  ogTitle: () => title,
+  twitterTitle: () => title,
+
+  description: () => description,
+  ogDescription: () => description,
+  twitterDescription: () => description,
+
+  ogImage: () => image,
+  twitterImage: () => image
+})
+
 export default defineComponent({
   name: 'QA',
-
-  metaInfo: {
-    title: 'Q&A',
-    meta: [
-      { name: 'description', content: description },
-      { name: 'twitter:description', content: description },
-      { property: 'og:description', content: description },
-
-      { name: 'twitter:image', content: image },
-      { property: 'og:image', content: image },
-
-      { name: 'twitter:title', content: title },
-      { property: 'og:title', content: title }
-    ]
-  },
 
   components: {
     TheFooter,
