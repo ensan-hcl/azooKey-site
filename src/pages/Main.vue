@@ -1,9 +1,11 @@
 <template>
   <div>
-    <!-- Page Header with Conditional Carousel or Static Images -->
     <PageHeader>
       <div class="features">
-        <img v-for="i in 4" :key="i" :src="`/static/assets/s${i - 1}.png`" class="screenshot" />
+        <img src="/static/assets/s0.png" class="screenshot" />
+        <img src="/static/assets/s1.png" class="screenshot" />
+        <img src="/static/assets/s2.png" class="screenshot" />
+        <img src="/static/assets/s3.png" class="screenshot" />
       </div>
 
       <!-- App Icon and Typo -->
@@ -39,10 +41,8 @@ import TheFooter from '../components/TheFooter.vue'
 import AppStoreLink from '../components/AppStoreLink.vue'
 import PageHeader from '../components/PageHeader.vue'
 import PageArticle from '../components/PageArticle.vue'
-import isMobile from 'ismobilejs'
 import { useHead, useSeoMeta } from '@unhead/vue'
 
-const phone = isMobile(window.navigator).phone
 const title = 'azooKey - 自由自在なキーボードアプリ'
 const description =
   'azooKeyは強力なカスタマイズ機能を搭載した日本語入力キーボードです。普段使う日本語タブをカスタマイズするカスタムキー機能とオリジナルの配列のキーボードを作るカスタムタブ機能でどこまでも自由にカスタマイズができます。ライブ変換、着せ替え、ユーザ辞書など、快適な入力のための機能もしっかりサポートしています。'
@@ -78,7 +78,7 @@ export default defineComponent({
 
   data() {
     return {
-      phone: phone,
+      // phone: phone,
       introductions: [
         {
           header: 'カスタムキー',
