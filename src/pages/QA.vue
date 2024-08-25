@@ -63,7 +63,7 @@ export default defineComponent({
           answer: '「あずーきー」です。「あずき」と読んでも大丈夫です！'
         },
         {
-          question: 'azooKeyのSNSはありますか？',
+          question: 'azooKeyのSNSアカウントはありますか？',
           answer:
             '<a href="https://twitter.com/azooKey_dev">Twitter</a>と<a href="https://bsky.app/profile/azookey.bsky.social">Bluesky</a>でアップデート情報などを発信しています。'
         },
@@ -75,7 +75,7 @@ export default defineComponent({
         {
           question: 'azooKeyを作っているのは誰ですか？',
           answer:
-            'azooKeyは日本の大学生が個人で開発しました。2020年から約2年半に渡り継続的にメンテナンスを行っています。'
+            'azooKeyは<a href="https://github.com/ensan-hcl">Miwa Keita</a>が個人で開発しました。2020年から約4年に渡り継続的にメンテナンスを行っています。'
         },
         {
           question: 'azooKeyの利用にフルアクセスは必要ですか？',
@@ -90,7 +90,7 @@ export default defineComponent({
         {
           question: 'azooKeyの変換エンジンはなんですか？',
           answer:
-            'azooKeyはSwiftで実装された独自開発の変換エンジンを利用しています。Mozcは利用していませんが、アルゴリズムは強く参考にしています。'
+            'azooKeyはSwiftで実装された<a href="https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter">独自開発の変換エンジン</a>を利用しています。Mozcは利用していませんが、アルゴリズムは強く参考にしています。'
         },
         {
           question: 'azooKeyにAndroid版はありますか？',

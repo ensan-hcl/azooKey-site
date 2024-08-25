@@ -28,9 +28,13 @@ export default defineComponent({
   data() {
     return {
       links: [
-        {
+      {
           name: 'オープンソース',
           destination: '/OpenSource'
+        },
+        {
+          name: 'macOS版',
+          destination: '/macOS'
         },
         {
           name: 'カスタムタブ',

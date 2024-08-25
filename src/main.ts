@@ -35,6 +35,11 @@ export const routes: RouteRecordRaw[] = [
 		component: () => import("./pages/CustomTabs.vue"),
 	},
 	{
+		path: "/macOS",
+		name: "Desktop",
+		component: () => import("./pages/Desktop.vue"),
+	},
+	{
 		path: "/OpenSource",
 		name: "OpenSource",
 		component: () => import("./pages/OpenSource.vue"),
