@@ -1,18 +1,20 @@
 <template>
   <section>
     <router-link to="/">
-      <img src="../assets/azooKeyLogo.png" class="icon" alt="logo" />
+      <img src="/static/assets/azooKeyLogo.png" class="icon" alt="logo" />
     </router-link>
     <router-link to="/">
-      <img src="../assets/azooKeyTypo.png" class="typo" alt="azooKey" />
+      <img src="/static/assets/azooKeyTypo.png" class="typo" alt="azooKey" />
     </router-link>
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'ArticleHeaderLogo'
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

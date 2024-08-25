@@ -2,36 +2,48 @@
 
 > Official site of azooKey
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# apply lint
-npm run lint --fix
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
 ## License
 
 `static/mori_project_custard/` is not under MIT LICENSE. For other part of this repository, all sources are under MIT LICENSE.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+bun install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+bun run dev
+```
+
+### Build with `vite-ssg`
+
+```sh
+bun run build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+bun test:unit
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+bun lint
+```

@@ -2,10 +2,12 @@
   <article><slot></slot></article>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'PageHeader'
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

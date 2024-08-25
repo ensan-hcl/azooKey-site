@@ -1,13 +1,15 @@
 <template>
   <router-link to="/">
-    <img src="../assets/azooKeyLogo.png">
+    <img src="/static/assets/azooKeyLogo.png" />
   </router-link>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'AppIcon'
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

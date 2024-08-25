@@ -1,15 +1,8 @@
 <template>
   <footer class="footer_box">
     <div class="footer_links">
-      <a href="https://github.com/ensan-hcl/azooKey" class="link"
-        >azooKey on GitHub</a
-      >
-      <router-link
-        v-for="link in links"
-        :key="link.name"
-        :to="link.destination"
-        class="link"
-      >
+      <a href="https://github.com/ensan-hcl/azooKey" class="link">azooKey on GitHub</a>
+      <router-link v-for="link in links" :key="link.name" :to="link.destination" class="link">
         {{ link.name }}
       </router-link>
     </div>
@@ -18,17 +11,21 @@
   </footer>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
+
 import AppIcon from './AppIcon.vue'
 import AppStoreLink from './AppStoreLink.vue'
 
-export default {
+export default defineComponent({
   name: 'TheFooter',
+
   components: {
     AppIcon,
     AppStoreLink
   },
-  data () {
+
+  data() {
     return {
       links: [
         {
@@ -58,7 +55,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
