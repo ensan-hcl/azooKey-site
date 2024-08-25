@@ -14,7 +14,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@fontsource-variable/noto-sans-jp": "^5.0.20",
     "@vueuse/core": "^11.0.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",

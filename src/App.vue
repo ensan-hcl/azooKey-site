@@ -7,8 +7,6 @@
 <script lang="ts" setup>
 import { useHead, useSeoMeta } from '@unhead/vue'
 
-import '@fontsource-variable/noto-sans-jp/wght.css'
-
 useHead({
   titleTemplate: '%s azooKey - 自由自在なキーボードアプリ'
 })
@@ -22,7 +20,7 @@ useSeoMeta({
 
 <style>
 #app {
-  font-family: 'Noto Sans JP Variable';
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
