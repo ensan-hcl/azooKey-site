@@ -27,13 +27,13 @@ bun install
 ### Compile and Hot-Reload for Development
 
 ```sh
-bun dev
+bun run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Build with `vite-ssg`
 
 ```sh
-bun build
+bun run build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
