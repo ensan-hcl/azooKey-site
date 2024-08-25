@@ -5,6 +5,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import vueDevTools from "vite-plugin-vue-devtools";
 import tsconfigPaths from "vite-tsconfig-paths";
+import type { ViteSSGOptions } from "vite-ssg";
 
 // https://vitejs.dev/config/
 export default defineConfig({
