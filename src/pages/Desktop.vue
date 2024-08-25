@@ -2,7 +2,7 @@
   <div>
     <PageHeader>
       <ArticleHeader1>
-        <span class="text">azooKey macOS版</span>
+        <span class="text">macOS版</span> <span class="text">azooKey</span>
       </ArticleHeader1>
       <!-- Place this tag where you want the button to render. -->
       <p>
@@ -55,14 +55,13 @@ import PageArticle from '../components/PageArticle.vue'
 import { useHead, useSeoMeta } from '@unhead/vue'
 import GitHubButton from 'vue-github-button'
 
-const title = 'azooKey on macOS'
+const title = 'macOS版 | azooKey - 自由自在なキーボードアプリ'
 const description =
   'iOS向けキーボードアプリ「azooKey」のmacOS版は、ニューラルかな漢字変換エンジンを搭載した本格派日本語入力です。'
 const image = 'https://azookey.netlify.app/static/og-image.png'
 
 useHead({
-  title: 'macOS版 | azooKey',
-  titleTemplate: ''
+  title: 'macOS版 |'
 })
 
 useSeoMeta({
