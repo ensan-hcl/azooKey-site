@@ -49,7 +49,7 @@ const description =
 const image = 'https://azookey.netlify.app/static/og-image.png'
 
 useHead({
-  title: 'トップページ',
+  title: 'azooKey - 自由自在なキーボードアプリ',
   titleTemplate: ''
 })
 
